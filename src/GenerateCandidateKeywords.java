@@ -1,11 +1,22 @@
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.regex.Pattern;
 
 
 public class GenerateCandidateKeywords {
-
+	
 	String text ;
+	private HashSet<String> disWords = new HashSet<String>(); 
+	
+	public HashSet<String> getdistinctWords()
+	{
+		if(disWords.isEmpty())
+		{
+			throw new IllegalStateException("Call generate before calling this method");
+		}
+		else
+			return disWords; 
+	}
+	
 
 	public GenerateCandidateKeywords(String text) {
 		// TODO Auto-generated constructor stub
@@ -72,23 +83,18 @@ public class GenerateCandidateKeywords {
 
 		return StopWords.getStopWordsFromFile(filename); 
 	}
-
+	
 	public static String checkLastChar(String word)
 	{
 		HashSet<String> trimmer = new HashSet<String>();
-		trimmer.add("?");
-		trimmer.add(".");
-		trimmer.add(",");
+		trimmer.add("s");trimmer.add("?");trimmer.add(".");
 		//add while loop for multiple last char checking
-		//see how substring index works
+		//see how substirng ke index works
 		if(trimmer.contains(word.substring(word.length()-1, word.length())))
 		{
 			return word.substring(0, word.length() - 1);
 		}
 		else
 			return word ; 
-
-
-
 	}
 }
