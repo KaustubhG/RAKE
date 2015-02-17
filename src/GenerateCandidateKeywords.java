@@ -21,7 +21,8 @@ public class GenerateCandidateKeywords {
 		// TODO Auto-generated constructor stub
 		this.text = text ; 
 	}
-	
+
+	//Gives a list of list of candidate key-words	
 	public ArrayList<ArrayList<String>> generate()
 	{
 		
