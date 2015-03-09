@@ -34,7 +34,6 @@ public class GenerateCandidateKeywords {
 		ArrayList<String> temp = new ArrayList<String>(); //temp list for storing candkey words
 		for(String sent : sentences){
 
-
 			for(String single_word: sent.split("\\s+|\\s*,\\s*"))
 			{
 				//System.out.println(single_word);
@@ -43,7 +42,12 @@ public class GenerateCandidateKeywords {
 
 					if(temp.isEmpty()) continue;
 					else{
-						candidate.add(new ArrayList<String>(temp));
+						
+						//Check number of words in the arraylist
+						
+						if(!(temp.size() > 3)){
+							candidate.add(new ArrayList<String>(temp));
+						}
 						temp.clear();
 					}
 				}

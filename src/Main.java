@@ -14,12 +14,12 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		/*
-		String data = ReadDataset.pdftoText("test2.pdf") ; 
-		System.out.println(data);
-		 */
+		
+		String build = ReadDataset.pdftoText("test2.pdf") ; 
+		System.out.println(build);
+		 
 
-		StringBuilder build = new StringBuilder();
+/*		StringBuilder build = new StringBuilder();
 		String sCurrentLine;
 		try (BufferedReader br = new BufferedReader(new FileReader("string.txt"))){
 
@@ -29,7 +29,7 @@ public class Main {
 
 		} catch (IOException e) {
 			e.printStackTrace();
-		} 
+		} */
 
 		GenerateCandidateKeywords genKey = new GenerateCandidateKeywords(build.toString());
 		ArrayList<ArrayList<String>> candKeyWords = genKey.generate();
@@ -38,14 +38,14 @@ public class Main {
 		}*/
 
 		GenerateWordScores wordScores = new GenerateWordScores(candKeyWords);
-		System.out.println(wordScores.getWordScore());
+		//System.out.println(wordScores.getWordScore());
 
 		//print top n keyWords
 		int n = 7;
 		List<Entry<ArrayList<String>, Double>> greatest = findGreatest(wordScores.getWordScore(), n);
-		System.out.println("Top "+n+" entries:");
+		//System.out.println("Top "+n+" entries:");
 		for (Entry<ArrayList<String>, Double> entry : greatest){
-			System.out.println(entry);
+			//System.out.println(entry);
 		}
 
 
