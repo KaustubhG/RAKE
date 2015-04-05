@@ -81,7 +81,7 @@ public class GenerateCandidateKeywords {
 	public ArrayList<String> genSent(){
 
 		ArrayList<String> sent_list = new ArrayList<String>();
-		String delimiters = "\\.\\s*|\\?\\s*|\\s*,\\s*";
+		String delimiters = "\\.\\s*|\\?\\s*|\\s*,\\s*|\\s*!\\s*";
 
 		for(String a : this.text.split(delimiters)){
 
