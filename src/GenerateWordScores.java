@@ -57,7 +57,6 @@ public class GenerateWordScores {
 		for(ArrayList<String> list : candKeywords){
 			//update all words in list to old_val + list.size()-1
 			for(String a : list){
-
 				if(loc_dist_edge_map.containsKey(a)){
 					int old_val = loc_dist_edge_map.get(a);
 					loc_dist_edge_map.put(a, old_val+(list.size()-1));

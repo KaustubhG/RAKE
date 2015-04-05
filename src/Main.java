@@ -15,13 +15,13 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		
-		String build = ReadDataset.pdftoText("test2.pdf") ; 
-		System.out.println(build);
+		/*String build = ReadDataset.pdftoText("test2.pdf") ; 
+		System.out.println(build);*/
 		 
 
-/*		StringBuilder build = new StringBuilder();
+		StringBuilder build = new StringBuilder();
 		String sCurrentLine;
-		try (BufferedReader br = new BufferedReader(new FileReader("string.txt"))){
+		try (BufferedReader br = new BufferedReader(new FileReader("test2.txt"))){
 
 			while ((sCurrentLine = br.readLine()) != null) {
 				build.append(sCurrentLine).append(" ");
@@ -29,7 +29,9 @@ public class Main {
 
 		} catch (IOException e) {
 			e.printStackTrace();
-		} */
+		} 
+		
+		//String build = "";
 
 		GenerateCandidateKeywords genKey = new GenerateCandidateKeywords(build.toString());
 		ArrayList<ArrayList<String>> candKeyWords = genKey.generate();
@@ -41,19 +43,15 @@ public class Main {
 		//System.out.println(wordScores.getWordScore());
 
 		//print top n keyWords
-		int n = 7;
+		int n = 25;
 		List<Entry<ArrayList<String>, Double>> greatest = findGreatest(wordScores.getWordScore(), n);
 		//System.out.println("Top "+n+" entries:");
 		for (Entry<ArrayList<String>, Double> entry : greatest){
-			//System.out.println(entry);
+			System.out.println(entry);
 		}
-
-
-
-
 	}
 
-	private static <K, V extends Comparable<? super V>> List<Entry<K, V>> 
+	public static <K, V extends Comparable<? super V>> List<Entry<K, V>> 
 	findGreatest(Map<K, V> map, int n){
 
 		Comparator<? super Entry<K, V>> comparator = 

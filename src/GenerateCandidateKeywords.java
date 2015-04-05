@@ -3,10 +3,10 @@ import java.util.HashSet;
 
 
 public class GenerateCandidateKeywords {
-	
+
 	String text ;
 	private HashSet<String> disWords = new HashSet<String>(); 
-	
+
 	public HashSet<String> getdistinctWords()
 	{
 		if(disWords.isEmpty())
@@ -16,7 +16,7 @@ public class GenerateCandidateKeywords {
 		else
 			return disWords; 
 	}
-	
+
 
 	public GenerateCandidateKeywords(String text) {
 		// TODO Auto-generated constructor stub
@@ -35,19 +35,28 @@ public class GenerateCandidateKeywords {
 		for(String sent : sentences){
 
 			for(String single_word: sent.split("\\s+|\\s*,\\s*"))
-			{
-				//System.out.println(single_word);
+			{	
 				single_word = single_word.toLowerCase();
+
+				//Removing numbers from generated keyword list
+				if(single_word.matches("[0-9]+") || single_word.matches("\\(.*\\)"))
+				{
+					//System.out.println(single_word);
+					continue ; 
+				}
+				//System.out.println(single_word);
 				if(stopWords.contains(single_word)){
 
 					if(temp.isEmpty()) continue;
 					else{
-						
+
 						//Check number of words in the arraylist
-						
-						if(!(temp.size() > 3)){
+
+						if(temp.size() <= 3){
+							//System.out.println(temp);
 							candidate.add(new ArrayList<String>(temp));
 						}
+
 						temp.clear();
 					}
 				}
@@ -58,7 +67,9 @@ public class GenerateCandidateKeywords {
 			}
 			//for the last words in temp
 			if(!temp.isEmpty()){
-				candidate.add(new ArrayList<String>(temp));
+				if(temp.size() <= 3){
+					candidate.add(new ArrayList<String>(temp));
+				}
 			}
 			temp.clear();
 
@@ -87,7 +98,7 @@ public class GenerateCandidateKeywords {
 
 		return StopWords.getStopWordsFromFile(filename); 
 	}
-	
+
 	public static String checkLastChar(String word)
 	{
 		HashSet<String> trimmer = new HashSet<String>();
