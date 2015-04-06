@@ -5,9 +5,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
-import jdk.nashorn.internal.ir.Terminal;
 
-//to generate tf-idf values for stop-words and 2nd key-word generating algorithm
+
+//to generate tf-idf values for stop-words and 2nd keyword generating algorithm
 public class TFIDF {
 
 	ArrayList<String> filenames;
@@ -113,7 +113,7 @@ public class TFIDF {
 	}
 
 	//calculate idf value for each word
-	private double getIDF(String word){
+	public double getIDF(String word){
 		
 		int total_docs = filenames.size();
 		int docs_containing_word = 0;

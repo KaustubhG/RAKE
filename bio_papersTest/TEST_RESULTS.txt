@@ -1,0 +1,286 @@
+
+test1.txt
+
+tf-idf values
+
+effective=0.04997565803356062
+delivery=0.04997565803356062
+specifity=0.04997565803356062
+drugs=0.04997565803356062
+agents=0.04997565803356062
+molecules=0.04997565803356062
+issue=0.04997565803356062
+problem=0.04997565803356062
+use=0.04997565803356062
+expected=0.04997565803356062
+order=0.04997565803356062
+new=0.04997565803356062
+many=0.04997565803356062
+present=0.04997565803356062
+intercalation=0.04997565803356062
+small=0.04997565803356062
+but=0.04997565803356062
+dna=0.05533358527762437
+issues=0.07496348705034094
+information=0.09995131606712124
+
+RAKE
+[quantum, leap]=4.0
+[detailed, mechanistic]=4.0
+[fully, solved]=4.0
+[genes, play]=4.0
+[targeting, dna]=4.166666666666666
+[issues, researches]=4.333333333333334
+[effective, anticancer]=4.5
+[drug, targets]=4.5
+[delivery, issues]=4.833333333333334
+[drug, delivery, issues]=7.333333333333334
+[advanced, clinical, trials]=8.0
+[bind, genomic, dna]=8.166666666666666
+[dna, binding, pharmaceuticals]=8.166666666666666
+[presently, dna, comprise]=8.166666666666666
+[antiviral, therapeutic, agents]=8.5
+[effective, anti-cancer, agents]=8.5
+[human, genome, project]=9.0
+[modulating, gene, expression]=9.0
+[important, pathological, processes]=9.0
+[regulate, cell, functions]=9.0
+
+
+
+test2.txt
+
+tf-idf values
+
+coming=0.05839058435465842
+fluid=0.05839058435465842
+volume%=0.05839058435465842
+widespread=0.05839058435465842
+phosphorous=0.05839058435465842
+o=0.05839058435465842
+hap=0.05839058435465842
+fine=0.05839058435465842
+dental=0.05839058435465842
+tested=0.05839058435465842
+temperatures=0.05839058435465842
+body=0.05839058435465842
+from=0.1105210709933341
+calcium=0.11678116870931685
+solution=0.11678116870931685
+biocompatibility=0.11678116870931685
+surfactant=0.11678116870931685	--good keyword---
+developed=0.11678116870931685
+hydroxyapatite=0.17517175306397526	--good keyword---
+powders=0.2335623374186337	--good keyword---
+
+RAKE
+
+[excellent, biocompatibility]=3.5
+[starting, precursor]=4.0
+[water-in-oil, emulsion]=4.0
+[phosphorous, pentoxide]=4.0
+[mineral, components]=4.0
+[natural, bones]=4.0
+[sol-emulsion-gel, method]=4.0	--good keyword---
+[successfully, produced]=4.0
+[bioactivity, coming]=4.0
+[calcium, acetate]=4.0
+[non-ionic, surfactant]=4.5	--good keyword---
+[2-butanol, solution]=4.5
+[developed, hap, powders]=7.5	---good keyword---
+[hydroxyapatite, fine, powders]=7.833333333333334   ---good keyword----
+[hydroxyapatite, gel, powders]=7.833333333333334	---good keyword----
+[surfactant, (span, 80)]=8.5
+[distilled, water, solution]=8.5
+[simulated, body, fluid]=9.0
+[attracted, widespread, interest]=9.0
+[dental, fields, due]=9.0	--good keyword ?---
+
+
+test3.txt
+
+rmsd=0.03759373859141134
+analysed=0.03759373859141134
+between=0.04743801645061788
+conserved=0.05639060788711701
+help=0.05639060788711701
+mtx=0.05639060788711701
+mtx)=0.05639060788711701
+structure=0.05639060788711701
+from=0.05929752056327236
+(dhfr=0.07518747718282268
+ligands=0.07518747718282268
+structural=0.07518747718282268
+ligand=0.09398434647852834
+residues=0.09398434647852834
+sites=0.11278121577423401
+bound=0.11278121577423401
+sequence=0.11278121577423401
+binding=0.11859504112654472
+alignment=0.13157808506993968
+dhfr=0.20676556225276235
+
+RAKE
+
+[ligand, protein, interactions]=6.0
+[perform, structural, comparisons]=7.25
+[selected, binding, sites]=7.4
+[binding, sites, consisting]=7.4
+[dihydrofolate, reductase, family]=8.0
+[conserved, residues, obtained]=8.5
+[structurally, conserved, residues]=8.5
+[enzyme, classification, no:]=8.5
+[multiple, sequence, alignment]=8.5
+[interacting, residues, obtained]=8.5
+[pairwise, sequence, alignment]=8.5
+[3dl5, (dhfr, bound]=8.6
+[3ia4, (dhfr, bound]=8.6
+[3dfr, (dhfr, bound]=8.6
+[coenzyme, dihydrofolic, acid]=8.666666666666666
+[reduces, dihydrofolic, acid]=8.666666666666666
+[results, obtained, reflected]=9.0
+[potential, competitive, inhibitor]=9.0
+[z-, score, >]=9.0
+[good, identity, score]=9.0
+
+
+test4.txt
+
+transposition=0.05386389901722617
+selection=0.05386389901722617
+transfections=0.05386389901722617
+show=0.05386389901722617
+coding=0.05386389901722617
+reduction=0.05386389901722617
+over=0.05386389901722617
+mammalian=0.05386389901722617
+productivity=0.08079584852583925
+clones=0.08079584852583925
+integration=0.08079584852583925
+recombinant=0.08079584852583925
+co-integration=0.08079584852583925
+transfection=0.08079584852583925
+generation=0.08079584852583925
+pools=0.10772779803445234
+piggybac=0.13465974754306542
+system=0.13465974754306542
+transposon=0.1615916970516785
+stable=0.1885236465602916
+
+RAKE
+[coding, dna]=4.333333333333334
+[standard, transfection]=4.333333333333334
+[multiple, transgenes]=4.333333333333334
+[selection, duration]=4.5
+[conventional, transfections]=4.5
+[stable, transfection]=4.5
+[recombinant, proteins]=4.666666666666666
+[recombinant, protein, productivity]=7.333333333333333
+[multiple, genes, shows]=7.333333333333334
+[decades, recombinant, proteins]=7.666666666666666
+[transposon-based, transfections, show]=8.0
+[generate, cell, pools]=8.0
+[stable, gene, expression]=8.166666666666666
+[stable, cell, lines]=8.166666666666666
+[single, gene, transfection]=8.333333333333334
+[exogenous, dna, elements]=8.333333333333334
+[selection, time, frame]=8.5
+[gained, increasing, importance]=9.0
+[host, cell, genome]=9.0
+[piggybac, transposon, system]=9.0
+
+
+
+test5.txt
+
+systems=0.05137948739356284
+components=0.05137948739356284
+enzymes=0.05137948739356284
+reaction=0.05137948739356284
+substrate=0.05137948739356284
+kinetics=0.05137948739356284
+concentrations=0.05137948739356284
+adsorbed=0.05137948739356284
+spectroscopy=0.07706923109034425
+transfer=0.08143456082507249
+electron=0.08143456082507249
+properties=0.08143456082507249
+involves=0.08143456082507249
+biological=0.08143456082507249
+substrates=0.08143456082507249
+peak=0.08143456082507249
+reactions=0.12215184123760872
+impedance=0.1541384621806885
+redox=0.16286912165014497
+milk=0.16286912165014497
+
+
+RAKE
+
+[biological, medium]=4.0
+[supporting, electrolyte]=4.0
+[alkaline, phosphatase]=4.0
+[redox, systems]=4.0
+[cyclic, voltammetry]=4.0
+[biomolecular, interactions]=4.0
+[study, shows]=4.5
+[peak, currents]=4.5
+[impedance, spectroscopy]=4.533333333333333
+[enzyme, kinetics]=5.0
+[impedance, spectroscopy, shows]=7.033333333333333
+[respective, enzyme, substrates]=7.5
+[milk, incredibly, sustains]=7.666666666666667
+[impedance, parameter, differences]=8.2
+[half, peak, potentials]=8.5
+[follow, michelis-menten, kinetics]=8.5
+[atomic, force, microscopy]=9.0
+[diffusion, coefficient, values]=9.0
+[standard, solvent, preparations]=9.0
+[electron, transfer, properties]=9.0
+
+
+test6.txt
+
+calf=0.060940045209964856
+ph=0.060940045209964856
+(4-amino=0.060940045209964856
+self-assembled=0.060940045209964856
+thiophenol)=0.060940045209964856
+confirmed=0.060940045209964856
+sams=0.060940045209964856
+amino=0.060940045209964856
+enzyme=0.06747347250902476
+changes=0.0768977754139132
+spectroscopy=0.0768977754139132
+follow=0.0768977754139132
+reaction=0.0768977754139132
+terminated=0.0768977754139132
+frequency=0.0768977754139132
+substrate=0.0768977754139132
+concentrations=0.11534666312086979
+kinetics=0.11534666312086979
+impedance=0.23069332624173958
+adsorption=0.24376018083985942
+
+RAKE
+
+[ph]=1.0
+[work]=1.0
+[obtained]=1.0
+[impedance]=1.5
+[substrate]=1.5
+[concentrations]=1.6666666666666667
+[adsorption]=1.6666666666666667
+[investigated]=2.0
+[substrate, concentrations]=3.166666666666667
+[impedance, spectroscopy]=3.5
+[real, time]=4.0
+[self-assembled, monolayers]=4.0
+[adsorbed, enzyme]=4.0
+[protein, concentrations]=4.166666666666667
+[enzyme, kinetics]=4.5
+[investigated, protein, adsorption]=6.166666666666667
+[follow, michelis-menten, kinetics]=8.5
+[atomic, force, microscopy]=9.0
+[quartz, crystal, microbalance]=9.0
+[para-nitro, phenyl, phosphate]=9.0

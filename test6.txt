@@ -1,1 +1,12 @@
-Matrix factorization is known to be an effective method for recommender systems that are given only the ratings from users to items. Currently, stochastic gradient (SG) method is one of the most popular algorithms for matrix factorization. However, as a sequential approach, SG is difficult to be parallelized for handling web-scale problems. In this article, we develop a fast parallel SG method, FPSG, for shared memory systems. By dramatically reducing the cache-miss rate and carefully addressing the load balance of threads, FPSG is more efficient than state-of-the-art parallel algorithms for matrix factorization.
+In this work, we investigated protein adsorption on two types of Self-Assembled Monolayers
+(SAMs). Amino terminated (4-Amino Thiophenol) and Carboxylic acid terminated (3-Mercapto
+Benzoic acid) were used to form the SAMs. The adsorption of the enzyme Calf Intestine
+Alkaline Phosphatase was investigated using Impedance Spectroscopy and adsorption was
+confirmed using Quartz Crystal Microbalance (QCM), Atomic Force Microscopy (AFM) and
+reaction with para-nitro phenyl phosphate (p-NPP). Single frequency impedance values were
+obtained and analyzed for various protein concentrations in different buffers and pH. Impedance
+changes have been found to follow Langmuir Adsorption kinetics. Enzyme Kinetics was studied
+by allowing the adsorbed enzyme to react with different concentrations of its substrate and
+following the reaction using impedance spectroscopy and single frequency impedance analysis in
+real time. Impedance changes at various substrate concentrations have been found to follow
+Michelis-Menten kinetics.
