@@ -1,3 +1,8 @@
+import in.codehub.document.Document;
+import in.codehub.paperparser.Paper;
+import in.codehub.paperparser.PaperParser;
+import in.codehub.pdfreader.PdfReader;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -13,11 +18,28 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		
+		//-------------Doing it via Paper Parser packages---------------------
+		
+		String build = ""; //this will contain the abstract
+		try {
+			Paper paper = run("Test1.pdf");
+			build = paper.getAbstract();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		//--------------------End---------------------------------------------
+		
+		
 
-
+		
 		/*String build = ReadDataset.pdftoText("test2.pdf") ; 
 		System.out.println(build);*/
 
+		/*
 		StringBuilder build = new StringBuilder();
 		String sCurrentLine;
 		try (BufferedReader br = new BufferedReader(new FileReader("test6.txt"))){
@@ -29,7 +51,8 @@ public class Main {
 		} catch (IOException e) {
 			e.printStackTrace();
 		} 
-
+	*/
+		System.out.println(build);
 		GenerateCandidateKeywords genKey = new GenerateCandidateKeywords(build.toString());
 		ArrayList<ArrayList<String>> candKeyWords = genKey.generate();
 
@@ -41,6 +64,7 @@ public class Main {
 		for (Entry<ArrayList<String>, Double> entry : greatest){
 			System.out.println(entry);
 		}
+		
 		
 	}
 
@@ -100,4 +124,10 @@ public class Main {
 		}
 		return result;
 	}
+	
+	  public static Paper run(String filePath) throws IOException
+	    {
+	        Document document = PdfReader.getInstance().read(filePath);
+	        return PaperParser.getInstance().parse(document);
+	    }
 }
