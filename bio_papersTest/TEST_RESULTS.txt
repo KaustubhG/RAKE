@@ -6,7 +6,7 @@ tf-idf values
 effective=0.04997565803356062
 delivery=0.04997565803356062
 specifity=0.04997565803356062
-drugs=0.04997565803356062
+drugs=0.04997565803356062 --good keyword---
 agents=0.04997565803356062
 molecules=0.04997565803356062
 issue=0.04997565803356062
@@ -34,7 +34,7 @@ RAKE
 [effective, anticancer]=4.5
 [drug, targets]=4.5
 [delivery, issues]=4.833333333333334
-[drug, delivery, issues]=7.333333333333334
+[drug, delivery, issues]=7.333333333333334      --good keyword---
 [advanced, clinical, trials]=8.0
 [bind, genomic, dna]=8.166666666666666
 [dna, binding, pharmaceuticals]=8.166666666666666
@@ -42,7 +42,7 @@ RAKE
 [antiviral, therapeutic, agents]=8.5
 [effective, anti-cancer, agents]=8.5
 [human, genome, project]=9.0
-[modulating, gene, expression]=9.0
+[modulating, gene, expression]=9.0  --good keyword---
 [important, pathological, processes]=9.0
 [regulate, cell, functions]=9.0
 
@@ -111,7 +111,7 @@ from=0.05929752056327236
 (dhfr=0.07518747718282268
 ligands=0.07518747718282268
 structural=0.07518747718282268
-ligand=0.09398434647852834
+ligand=0.09398434647852834   --good keyword---
 residues=0.09398434647852834
 sites=0.11278121577423401
 bound=0.11278121577423401
@@ -122,7 +122,7 @@ dhfr=0.20676556225276235
 
 RAKE
 
-[ligand, protein, interactions]=6.0
+[ligand, protein, interactions]=6.0  --good keyword---
 [perform, structural, comparisons]=7.25
 [selected, binding, sites]=7.4
 [binding, sites, consisting]=7.4
@@ -157,7 +157,7 @@ mammalian=0.05386389901722617
 productivity=0.08079584852583925
 clones=0.08079584852583925
 integration=0.08079584852583925
-recombinant=0.08079584852583925
+recombinant=0.08079584852583925  --good keyword---
 co-integration=0.08079584852583925
 transfection=0.08079584852583925
 generation=0.08079584852583925
@@ -174,7 +174,7 @@ RAKE
 [selection, duration]=4.5
 [conventional, transfections]=4.5
 [stable, transfection]=4.5
-[recombinant, proteins]=4.666666666666666
+[recombinant, proteins]=4.666666666666666  --good keyword---
 [recombinant, protein, productivity]=7.333333333333333
 [multiple, genes, shows]=7.333333333333334
 [decades, recombinant, proteins]=7.666666666666666
@@ -227,13 +227,13 @@ RAKE
 [peak, currents]=4.5
 [impedance, spectroscopy]=4.533333333333333
 [enzyme, kinetics]=5.0
-[impedance, spectroscopy, shows]=7.033333333333333
+[impedance, spectroscopy, shows]=7.033333333333333  --good keyword---
 [respective, enzyme, substrates]=7.5
 [milk, incredibly, sustains]=7.666666666666667
 [impedance, parameter, differences]=8.2
 [half, peak, potentials]=8.5
-[follow, michelis-menten, kinetics]=8.5
-[atomic, force, microscopy]=9.0
+[follow, michelis-menten, kinetics]=8.5 --good keyword---
+[atomic, force, microscopy]=9.0 --good keyword---
 [diffusion, coefficient, values]=9.0
 [standard, solvent, preparations]=9.0
 [electron, transfer, properties]=9.0
@@ -258,9 +258,9 @@ terminated=0.0768977754139132
 frequency=0.0768977754139132
 substrate=0.0768977754139132
 concentrations=0.11534666312086979
-kinetics=0.11534666312086979
+kinetics=0.11534666312086979   --good keyword---
 impedance=0.23069332624173958
-adsorption=0.24376018083985942
+adsorption=0.24376018083985942  --good keyword---
 
 RAKE
 
@@ -273,14 +273,14 @@ RAKE
 [adsorption]=1.6666666666666667
 [investigated]=2.0
 [substrate, concentrations]=3.166666666666667
-[impedance, spectroscopy]=3.5
+[impedance, spectroscopy]=3.5 
 [real, time]=4.0
 [self-assembled, monolayers]=4.0
 [adsorbed, enzyme]=4.0
-[protein, concentrations]=4.166666666666667
+[protein, concentrations]=4.166666666666667 --good keyword---
 [enzyme, kinetics]=4.5
 [investigated, protein, adsorption]=6.166666666666667
-[follow, michelis-menten, kinetics]=8.5
+[follow, michelis-menten, kinetics]=8.5 --good keyword(removing verb)---
 [atomic, force, microscopy]=9.0
-[quartz, crystal, microbalance]=9.0
-[para-nitro, phenyl, phosphate]=9.0
+[quartz, crystal, microbalance]=9.0  --good keyword---
+[para-nitro, phenyl, phosphate]=9.0  --good keyword---
