@@ -5,14 +5,14 @@ The project aims to develop a keyword generator from abstracts of academic resea
 
 To-do list:
 
-1)<strike>Parse PDF as raw text</strike>
+1) <strike>Parse PDF as raw text</strike>
 
-2)<strike>Remove candidate keywords greater than length 3</strike> 
+2) <strike>Remove candidate keywords greater than length 3</strike> 
 
 3) Parsing PDF:
-  a)<strike> Remove numbers </strike>  
-  b) Remove unwanted tables, figures
-  c)<strike>Strip punctuations </strike>  
+    a)<strike> Remove numbers </strike>  
+    b)<strike>Remove unwanted tables, figures </strike>
+    c)<strike>Strip punctuations </strike>  
 
 4) Using NLP to better keyword results
     Removing: s, ies, es etc from words
@@ -20,11 +20,5 @@ To-do list:
 5) AddedTF scores for dynamic stop-word  generation
     Added TF-IDF keyword generation algorithm
 
-5) Added parser to extract abstracts from research papers
+5) Added parser to extract abstracts from research paper
     Thanks to https://github.com/nemausus/research-paper-parser !
-
-
-  
-  
-Final Goal:
-Writing a keyword suggesting package for Koha
