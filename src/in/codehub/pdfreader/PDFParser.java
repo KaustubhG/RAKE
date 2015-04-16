@@ -3,7 +3,6 @@ package in.codehub.pdfreader;
 import org.apache.pdfbox.cos.COSDocument;
 import org.apache.pdfbox.cos.COSStream;
 import org.apache.pdfbox.exceptions.CryptographyException;
-import org.apache.pdfbox.exceptions.InvalidPasswordException;
 import org.apache.pdfbox.exceptions.WrappedIOException;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
@@ -106,7 +105,8 @@ class PDFParser extends PDFStreamEngine
         parse(new PDDocument(doc));
     }
 
-    public void resetEngine()
+    @Override
+	public void resetEngine()
     {
         super.resetEngine();
         currentPageNo = 0;
@@ -435,7 +435,8 @@ class PDFParser extends PDFStreamEngine
         return second < first + variance && second > first - variance;
     }
 
-    protected void processTextPosition(TextPosition text)
+    @Override
+	protected void processTextPosition(TextPosition text)
     {
         boolean showCharacter = true;
         if (suppressDuplicateOverlappingText)
@@ -712,7 +713,8 @@ class PDFParser extends PDFStreamEngine
     }
 
 
-    protected String inspectFontEncoding(String str)
+    @Override
+	protected String inspectFontEncoding(String str)
     {
         if (!sortByPosition || str == null || str.length() < 2)
         {
